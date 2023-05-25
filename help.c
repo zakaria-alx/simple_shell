@@ -48,7 +48,7 @@ void help_unsetenv(void)
  */
 void help_general(void)
 {
-	char *help = "^-^ bash, version 1.0(1)-release\n";
+	char *help = "($) bash, version 1.0(1)-release\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "These commands are defined internally.Type 'help' to see the list";

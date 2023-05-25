@@ -49,7 +49,7 @@ void shell_loop(shell_data *shdata)
 	loop = 1;
 	while (loop == 1)
 	{
-		write(STDIN_FILENO, "^-^ ", 4);
+		write(STDIN_FILENO, "($) ", 4);
 		input = readline(&end_of_file);
 		if (end_of_file != -1)
 		{
