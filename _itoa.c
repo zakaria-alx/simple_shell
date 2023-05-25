@@ -28,8 +28,7 @@ char *_itoa(int n)
 	}
 
 	length--;
-	do /* TODO Fix this */
-	{
+	do {
 		*(buffer + length) = (n1 % 10) + '0';
 		n1 = n1 / 10;
 		length--;

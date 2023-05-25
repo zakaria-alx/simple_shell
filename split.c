@@ -71,8 +71,7 @@ void add_nodes(seperator_list **head_s, command_list **head_l, char *input)
 	}
 
 	line = _strtok(input, ";|&");
-	do /* TODO Fix this */
-	{
+	do {
 		line = swap_char(line, 1);
 		add_cmd_node_end(head_l, line);
 		line = _strtok(NULL, ";|&");

@@ -193,8 +193,7 @@ int exec_cmd(shell_data *shdata)
 	}
 	else
 	{
-		do /* TODO: fix this */
-		{
+		do {
 			wpd = waitpid(pd, &state, WUNTRACED);
 		} while (!WIFEXITED(state) && !WIFSIGNALED(state));
 	}
